@@ -29,13 +29,15 @@ TIME DISPLAY MODE:
 #define MODE_MARQUEE 1
 #define MODE_BINARY  2
 #define MODE_MOON    3
-#define MODE_BATTERY 4
+#define MODE_BATBALL 4
+#define MODE_BATTERY 5
 
 void (*modeFunc[])(uint8_t) = {
   mode_set,
   mode_marquee,
   mode_binary,
   mode_moon,
+  mode_batball,
   mode_battery
 };
 #define N_MODES (sizeof(modeFunc) / sizeof(modeFunc[0]))
