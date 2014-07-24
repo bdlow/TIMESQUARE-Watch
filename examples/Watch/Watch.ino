@@ -31,7 +31,8 @@ TIME DISPLAY MODE:
 #define MODE_MOON    3
 #define MODE_BATBALL 4
 #define MODE_LIFE    5
-#define MODE_BATTERY 6
+#define MODE_DICE    6
+#define MODE_BATTERY 7
 
 void (*modeFunc[])(uint8_t) = {
   mode_set,
@@ -40,6 +41,7 @@ void (*modeFunc[])(uint8_t) = {
   mode_moon,
   mode_batball,
   mode_life,
+  mode_dice,
   mode_battery
 };
 #define N_MODES (sizeof(modeFunc) / sizeof(modeFunc[0]))
